@@ -1,8 +1,8 @@
 pipeline {
     agent { node { label 'Slave' } }
-    tools {
-        maven 'M3' 
-    }
+    #tools {
+        #maven 'M3' 
+    #}
 	stages {
 	    stage ('compiling stage') {
 		
