@@ -5,7 +5,7 @@ pipeline {
 	    stage ('compiling stage') {
 		
 		   steps {
-		       withMaven(maven : 'M3') {
+		       maven(maven : 'M3') {
 			       sh 'mvn compile'
 			   }
 		   }
@@ -14,7 +14,7 @@ pipeline {
 		stage ('Testing stage') {
 		
 		   steps {
-		       withMaven(maven : 'M3') {
+		       maven(maven : 'M3') {
 			       sh 'mvn test'
 			   }
 		   }
