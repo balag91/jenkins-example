@@ -11,6 +11,19 @@ pipeline {
 		   }
 		}
 		
+		stage ('Packaging stage') {
+		
+		   steps {
+			       sh 'mvn package'
+			   }
+		   }
+		stage ('Installation stage') {
+		
+		   steps {
+			       sh 'mvn install'
+			   }
+		   }
+		
 		stage ('Testing stage') {
 		
 		   steps {
