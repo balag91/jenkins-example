@@ -1,5 +1,5 @@
 pipeline {
-    //agent { node { label 'slave' } }
+    agent { node { label 'master' } }
 	    // assigning slave nodes here.
     //tools {
         //maven 'M3' 
