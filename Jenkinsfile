@@ -1,3 +1,6 @@
+env.git_repo_name="git@github.com:balag91/jenkins-example" // update this value as created in Step 9 above
+env.git_id="13bf12b1-5d6f-4203-801d-3bb2ef5b6c22"  
+
 pipeline {
     agent { node { label 'master' } }
 	    // assigning slave nodes here.
